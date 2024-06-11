@@ -9,15 +9,31 @@ import SwiftUI
 
 struct CalculatorView: View {
     
-    @State var altura: Double
-    @State var peso: Double
-    @State var idade: Int
-    
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    @State var altura: Double = 150
+    @State var idade: Int = 20
+    @State var peso: Int = 70
 
-#Preview {
-    CalculatorView(altura: 1.70, peso: 100, idade: 23)
+    var body: some View {
+        VStack {
+            HeightCalculatorView(selectedHeight: $altura)
+                .padding()
+            HStack {
+                DataComponentView(text: "Idade", numberDefault: $idade)
+                    .padding()
+                DataComponentView(text: "Peso", numberDefault: $peso)
+                    .padding()
+            }
+            CalculatorButton(userWeight: Double(peso), userHeight: altura, text: "Calcular")
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .toolbar{
+            ToolbarItem(placement: .principal){
+                Text("IMC")
+                    .bold()
+                    .foregroundStyle(.white)
+            }
+        }
+        .cornerRadius(3.0)
+        .background(Color(hex: "0E0A1F"))
+    }
 }
