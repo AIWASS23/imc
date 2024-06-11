@@ -11,6 +11,8 @@
 		14FC64402C18842300B49235 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FC643F2C18842300B49235 /* ContentView.swift */; };
 		14FC64422C18842400B49235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14FC64412C18842400B49235 /* Assets.xcassets */; };
 		14FC64462C18842400B49235 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14FC64452C18842400B49235 /* Preview Assets.xcassets */; };
+		14FC644D2C1884C700B49235 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FC644C2C1884C700B49235 /* ResultsView.swift */; };
+		14FC644F2C18909700B49235 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FC644E2C18909700B49235 /* CalculatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		14FC64412C18842400B49235 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14FC64432C18842400B49235 /* IMC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IMC.entitlements; sourceTree = "<group>"; };
 		14FC64452C18842400B49235 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		14FC644C2C1884C700B49235 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		14FC644E2C18909700B49235 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				14FC643D2C18842300B49235 /* IMCApp.swift */,
 				14FC643F2C18842300B49235 /* ContentView.swift */,
+				14FC644C2C1884C700B49235 /* ResultsView.swift */,
+				14FC644E2C18909700B49235 /* CalculatorView.swift */,
 				14FC64412C18842400B49235 /* Assets.xcassets */,
 				14FC64432C18842400B49235 /* IMC.entitlements */,
 				14FC64442C18842400B49235 /* Preview Content */,
@@ -139,7 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14FC644F2C18909700B49235 /* CalculatorView.swift in Sources */,
 				14FC64402C18842300B49235 /* ContentView.swift in Sources */,
+				14FC644D2C1884C700B49235 /* ResultsView.swift in Sources */,
 				14FC643E2C18842300B49235 /* IMCApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
